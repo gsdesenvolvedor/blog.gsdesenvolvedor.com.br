@@ -6,14 +6,14 @@ lang: pt-BR
 
 timezone: America/Sao_Paulo
 
-title: blog/acervo.
+title: "blog/acervo."
 
-tagline: @gsdesenvolvedor
+tagline: "@gsdesenvolvedor"
 
 description: >-
   Blog para compartilhamento de projetos desenvolvidos e experiências técnicas.
 
-url: ""
+url: "https://blog.gsdesenvolvedor.com.br"
 
 github:
   username: gsdesenvolvedor
@@ -22,15 +22,11 @@ twitter:
   username: gsdesenvolvedor
 
 social:
-  name: @gsdesenvolvedor
-  email: contato@gsdesenvolvedor.com.br
+  name: "@gsdesenvolvedor"
+  email: "contato@gsdesenvolvedor.com.br"
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/gsdesenvolvedor # change to your twitter homepage
-    - https://github.com/gsdesenvolvedor # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://twitter.com/gsdesenvolvedor
+    - https://github.com/gsdesenvolvedor
 
 google_site_verification:
 
@@ -40,9 +36,9 @@ google_analytics:
     proxy_endpoint:
     cache_path:
 
-theme_mode: #light
+theme_mode: light
 
-img_cdn: https://raw.githubusercontent.com/gsdesenvolvedor/gsdesenvolvedor-cdn/refs/heads/main/logos/
+img_cdn: "https://raw.githubusercontent.com/gsdesenvolvedor/gsdesenvolvedor-cdn/refs/heads/main/logos/"
 
 avatar: logo.png
 
@@ -68,7 +64,8 @@ comments:
 assets:
   self_host:
     enabled: true
-    env: [production]
+    env:
+      - production
 
 pwa:
   enabled: true
@@ -99,20 +96,24 @@ defaults:
       comments: true
       toc: true
       permalink: /posts/:title/
+
   - scope:
       path: _drafts
     values:
       comments: false
+
   - scope:
       path: ""
       type: tabs
     values:
       layout: page
       permalink: /:title/
+
   - scope:
       path: assets/img/favicons
     values:
       swcache: true
+
   - scope:
       path: assets/js/dist
     values:
@@ -128,7 +129,8 @@ compress_html:
   profile: false
   blanklines: false
   ignore:
-    envs: [development]
+    envs:
+      - development
 
 exclude:
   - "*.gem"
@@ -142,7 +144,9 @@ exclude:
   - package*.json
 
 jekyll-archives:
-  enabled: [categories, tags]
+  enabled:
+    - categories
+    - tags
   layouts:
     category: category
     tag: tag
